@@ -1,9 +1,11 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
+FROM python:3.9.13
 
-WORKDIR /code
+ADD . /Project2/
 
-COPY . /code
+WORKDIR /Project2
 
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+RUN pip install -r /Project2/requirements.txt
+RUN pip install requests
+EXPOSE 8080
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=8080"]
