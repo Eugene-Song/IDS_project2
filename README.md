@@ -39,9 +39,9 @@ Week3: Finish the automatically deployment to App Runner.
 
 # Screemshots
 For app runner testing result:
-![alt text](img1.png)
+![alt text](./resource/img1.png)
 For minikube testing result:
-![alt text](img2.png)
+![alt text](./resource/img2.png)
 
 ## Reference
 
