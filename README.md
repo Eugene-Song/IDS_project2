@@ -1,11 +1,15 @@
 ## Flask microservice for looking up zipcode
 
 # Introduction
-This is a course project which is a simple microservice for looking up detail information of a zipcode based on Flask. This project image will be pushed to DockerHub, or Cloud based Container Registery (ECR), and it will be deployed automatically to Kubernetes cluster.
+This is a course project which is a simple microservice for looking up detail information of a zipcode based on Flask. This project image will be pushed to DockerHub, or Cloud based Container Registery (ECR), and it is deployed to App Runner from AWS. 
+
+For minikube testing, user can just use the image which I pushed to dockerhub to create the local cluster.
+
+In the future, this project can be deployed to EKS.
 
 # Usage
 For local testing, just use ```python3 app.py``` to start the service. 
-Then user can go to ```localhost:5000``` to check the result.
+Then user can go to ```localhost:8080``` to check the result.
 
 # Test with minikube
 1.  Push container to DockerHub
@@ -34,3 +38,12 @@ Week2: Add an interactive page for this application and add more features. And f
 Week3: Finish the automatically deployment to App Runner.
 
 # Screemshots
+For app runner testing result:
+![alt text](img1.png)
+For minikube testing result:
+![alt text](img2.png)
+
+## Reference
+
+1. [Applied Kubernetes by Noah Gift on Github](https://github.com/nogibjj/coursera-applied-de-kubernetes-lab)
+2. [Rust Template by Noah Gift on Github](https://github.com/noahgift/rust-new-project-template)
